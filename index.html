@@ -83,7 +83,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="JQuery框架一定要在angularJS之前加载"><a href="#JQuery框架一定要在angularJS之前加载" class="headerlink" title="JQuery框架一定要在angularJS之前加载"></a>JQuery框架一定要在angularJS之前加载</h2><h3 id="如果我们的web页面只引入angulrjs框架-不引入jQuery框架-，那么我们使用过程中可能会遇到如下错误："><a href="#如果我们的web页面只引入angulrjs框架-不引入jQuery框架-，那么我们使用过程中可能会遇到如下错误：" class="headerlink" title="如果我们的web页面只引入angulrjs框架(不引入jQuery框架)，那么我们使用过程中可能会遇到如下错误："></a>如果我们的web页面只引入angulrjs框架(不引入jQuery框架)，那么我们使用过程中可能会遇到如下错误：</h3><p>Error: [jqLite:nosel] Looking up elements via selectors is not supported by jqLite!</p>
+        <h2 id="JQuery框架一定要在angularJS之前加载"><a href="#JQuery框架一定要在angularJS之前加载" class="headerlink" title="JQuery框架一定要在angularJS之前加载"></a>JQuery框架一定要在angularJS之前加载</h2><h3 id="如果我们的web页面只引入angulrjs框架-不引入jQuery框架-，那么我们使用过程中可能会遇到如下错误："><a href="#如果我们的web页面只引入angulrjs框架-不引入jQuery框架-，那么我们使用过程中可能会遇到如下错误：" class="headerlink" title="如果我们的web页面只引入angulrjs框架(不引入jQuery框架)，那么我们使用过程中可能会遇到如下错误："></a>如果我们的web页面只引入angulrjs框架(不引入jQuery框架)，那么我们使用过程中可能会遇到如下错误：</h3><pre><code class="bash">
+</code></pre>
+<p>Error: [jqLite:nosel] Looking up elements via selectors is not supported by jqLite!</p>
 <h3 id="这是因为angular-element-这个API并不能支持类似jquery的选择器，也就是说angular-element-并不支持selector。最好引入JQuery框架，因为jQuery框架选择元素实在是太方便了。如果我们确实不想使用jQuery，那么可以使用HTML5中的document-querySelector-，这个API是支持选择器的。"><a href="#这是因为angular-element-这个API并不能支持类似jquery的选择器，也就是说angular-element-并不支持selector。最好引入JQuery框架，因为jQuery框架选择元素实在是太方便了。如果我们确实不想使用jQuery，那么可以使用HTML5中的document-querySelector-，这个API是支持选择器的。" class="headerlink" title="这是因为angular.element()这个API并不能支持类似jquery的选择器，也就是说angular.element()并不支持selector。最好引入JQuery框架，因为jQuery框架选择元素实在是太方便了。如果我们确实不想使用jQuery，那么可以使用HTML5中的document.querySelector()，这个API是支持选择器的。"></a>这是因为angular.element()这个API并不能支持类似jquery的选择器，也就是说angular.element()并不支持selector。最好引入JQuery框架，因为jQuery框架选择元素实在是太方便了。如果我们确实不想使用jQuery，那么可以使用HTML5中的document.querySelector()，这个API是支持选择器的。</h3>
       
     </div>
