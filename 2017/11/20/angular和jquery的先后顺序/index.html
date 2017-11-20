@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>&#39;angular和jquery的先后顺序&#39; | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="JQuery框架一定要在angularJS之前加载如果我们的web页面只引入angulrjs框架(不引入jQuery框架)，那么我们使用过程中可能会遇到如下错误：Error: [jqLite:nosel] Looking up elements via selectors is not supported by jqL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="&#39;angular和jquery的先后顺序&#39;">
+<meta property="og:url" content="http://yoursite.com/2017/11/20/angular和jquery的先后顺序/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="JQuery框架一定要在angularJS之前加载如果我们的web页面只引入angulrjs框架(不引入jQuery框架)，那么我们使用过程中可能会遇到如下错误：Error: [jqLite:nosel] Looking up elements via selectors is not supported by jqLite! 这是因为angular.element()这个API并不能支持类似jq">
+<meta property="og:updated_time" content="2017-11-20T06:44:42.220Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="&#39;angular和jquery的先后顺序&#39;">
+<meta name="twitter:description" content="JQuery框架一定要在angularJS之前加载如果我们的web页面只引入angulrjs框架(不引入jQuery框架)，那么我们使用过程中可能会遇到如下错误：Error: [jqLite:nosel] Looking up elements via selectors is not supported by jqLite! 这是因为angular.element()这个API并不能支持类似jq">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-angular和jquery的先后顺序" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/11/20/angular和jquery的先后顺序/" class="article-date">
+  <time datetime="2017-11-20T06:30:30.000Z" itemprop="datePublished">2017-11-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      &#39;angular和jquery的先后顺序&#39;
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="JQuery框架一定要在angularJS之前加载"><a href="#JQuery框架一定要在angularJS之前加载" class="headerlink" title="JQuery框架一定要在angularJS之前加载"></a>JQuery框架一定要在angularJS之前加载</h2><h3 id="如果我们的web页面只引入angulrjs框架-不引入jQuery框架-，那么我们使用过程中可能会遇到如下错误："><a href="#如果我们的web页面只引入angulrjs框架-不引入jQuery框架-，那么我们使用过程中可能会遇到如下错误：" class="headerlink" title="如果我们的web页面只引入angulrjs框架(不引入jQuery框架)，那么我们使用过程中可能会遇到如下错误："></a>如果我们的web页面只引入angulrjs框架(不引入jQuery框架)，那么我们使用过程中可能会遇到如下错误：</h3><p>Error: [jqLite:nosel] Looking up elements via selectors is not supported by jqLite!</p>
+<h3 id="这是因为angular-element-这个API并不能支持类似jquery的选择器，也就是说angular-element-并不支持selector。最好引入JQuery框架，因为jQuery框架选择元素实在是太方便了。如果我们确实不想使用jQuery，那么可以使用HTML5中的document-querySelector-，这个API是支持选择器的。"><a href="#这是因为angular-element-这个API并不能支持类似jquery的选择器，也就是说angular-element-并不支持selector。最好引入JQuery框架，因为jQuery框架选择元素实在是太方便了。如果我们确实不想使用jQuery，那么可以使用HTML5中的document-querySelector-，这个API是支持选择器的。" class="headerlink" title="这是因为angular.element()这个API并不能支持类似jquery的选择器，也就是说angular.element()并不支持selector。最好引入JQuery框架，因为jQuery框架选择元素实在是太方便了。如果我们确实不想使用jQuery，那么可以使用HTML5中的document.querySelector()，这个API是支持选择器的。"></a>这是因为angular.element()这个API并不能支持类似jquery的选择器，也就是说angular.element()并不支持selector。最好引入JQuery框架，因为jQuery框架选择元素实在是太方便了。如果我们确实不想使用jQuery，那么可以使用HTML5中的document.querySelector()，这个API是支持选择器的。</h3>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/11/20/angular和jquery的先后顺序/" data-id="cja7ttxms0000h0tdlg7xds6j" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/20/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/11/20/angular和jquery的先后顺序/">&#39;angular和jquery的先后顺序&#39;</a>
+          </li>
+        
+          <li>
+            <a href="/2017/11/20/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2017/11/17/git的使用与部署/">git的使用与部署</a>
+          </li>
+        
+          <li>
+            <a href="/2017/11/17/hexo-deploy时出现的坑/">hexo deploy时出现的坑</a>
+          </li>
+        
+          <li>
+            <a href="/2017/11/16/github-hexo搭建个人博客/">github+hexo搭建个人博客</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
